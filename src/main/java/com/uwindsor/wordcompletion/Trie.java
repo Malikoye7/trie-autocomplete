@@ -26,10 +26,6 @@ import java.util.List;
  *   getWordsWithPrefix           – O(L + W) where W = number of results
  *
  * @author Oyewole Malik
- * Student ID: 110215789
- * Course: COMP 8547 – Advanced Computing Concepts
- * Instructor: Dr. Olena Syrotkina
- * University of Windsor – Summer 2026
  * ============================================================
  */
 public class Trie {

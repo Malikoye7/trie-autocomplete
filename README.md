@@ -14,8 +14,8 @@ The program reads CSV data from multiple real-world sources, extracts and filter
 
 ## Features
 
-- Parses 4,800+ word tokens from multiple real-world CSV data sources
-- Builds a vocabulary of 435 unique words
+- Parses word tokens from any CSV data sources placed in `data/`
+- Builds a de-duplicated vocabulary and serves prefix queries from it
 - Returns prefix completions in alphabetical order automatically
 - Supports exact word lookup (like a dictionary)
 - Handles full-text CSV cells with two-level parsing

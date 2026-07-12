@@ -10,16 +10,15 @@ import java.util.List;
 
 /**
  * ============================================================
- * Task 2: Word Completion Using Tries
- * COMP 8547 Advanced Computing Concepts – Assignment 3
+ * WordCompletion — Trie-based Autocomplete Engine
  * ============================================================
  *
  * This program implements a word completion feature using a Trie
- * data structure. It reads all CSV files collected by my group
- * in Assignment 1 (Bank of Canada exchange rate data, XE.com,
- * Wise.com, and Books), builds a vocabulary Trie from every
- * valid word found, and then demonstrates word completion by
- * showing all vocabulary words that start with a given prefix.
+ * data structure. It reads every CSV file in the "data" folder
+ * (for example, Bank of Canada exchange-rate data), builds a
+ * vocabulary Trie from every valid word found, and then
+ * demonstrates word completion by showing all vocabulary words
+ * that start with a given prefix.
  *
  * The three steps this program performs:
  *
@@ -47,16 +46,11 @@ import java.util.List;
  *   every word in a plain array or hash table.
  *
  * Data source:
- *   boc_rates_task1.csv and boc_rates_task2.csv from my own
- *   Assignment 1 Bank of Canada Selenium scraper.
- *   xe_abulizi.csv, wise_t1.csv, wise_t2.csv, books.csv from
- *   group members.
+ *   Any .csv files placed in the "data" folder — for example,
+ *   output from a Bank of Canada Selenium scraper. Sample rate
+ *   files are included to demonstrate the program.
  *
  * @author Oyewole Malik
- * Student ID: 110215789
- * Course: COMP 8547 – Advanced Computing Concepts
- * Instructor: Dr. Olena Syrotkina
- * University of Windsor – Summer 2026
  * ============================================================
  */
 public class WordCompletion {
@@ -85,7 +79,7 @@ public class WordCompletion {
 
         System.out.println("=====================================================");
         System.out.println("  Task 2: Word Completion Using Tries");
-        System.out.println("  COMP 8547 Assignment 3 – Oyewole Malik (110215789)");
+        System.out.println("  Trie-based Autocomplete Engine");
         System.out.println("=====================================================\n");
 
         // ---------------------------------------------------------------
@@ -102,7 +96,7 @@ public class WordCompletion {
 
         if (csvFiles == null || csvFiles.length == 0) {
             System.out.println("ERROR: No CSV files found in '" + DATA_FOLDER + "' folder.");
-            System.out.println("Please place the group's Assignment 1 CSV files in the 'data' folder.");
+            System.out.println("Please place one or more .csv files in the 'data' folder.");
             return;
         }
 
