@@ -1,0 +1,10 @@
+target/
+*.class
+*.jar
+.classpath
+.project
+.settings/
+.DS_Store
+
+# Duplicate .txt copies of the Java sources (submission artifact)
+src/main/java/**/*.txt
