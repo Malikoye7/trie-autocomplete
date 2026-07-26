@@ -8,3 +8,7 @@ target/
 
 # Duplicate .txt copies of the Java sources (submission artifact)
 src/main/java/**/*.txt
+
+# coursework artefacts - kept locally, not published
+*.pdf
+*.docx
